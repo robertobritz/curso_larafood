@@ -5,6 +5,17 @@ use Illuminate\Support\Facades\Route;
 Route::prefix('admin')
         ->namespace('Admin')
         ->group(function(){
+
+     /**
+     * Routes Permissions
+     */
+    Route::any('permissions/search', 'ACL\permissionController@search')->name('permissions.search');
+    Route::resource('permissions', 'ACL\permissionController');        
+     /**
+     * Routes Profiles
+     */
+    Route::any('profile/search', 'ACL\ProfileController@search')->name('profile.search');
+    Route::resource('profile', 'ACL\ProfileController');        
     /**
      * Routes Details Plans
      */

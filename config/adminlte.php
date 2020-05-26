@@ -213,6 +213,16 @@ return [
             'url' => 'admin/plans',
             'icon' => 'fas fa-list-alt'  
         ],
+        [
+            'text' => 'Perfis',
+            'url' => 'admin/profile',
+            'icon' => 'fas fa-users'  
+        ],
+        [
+            'text' => 'Permissões',
+            'url' => 'admin/permissions',
+            'icon' => 'fas fa-lock'  
+        ],
  
     ],
 
