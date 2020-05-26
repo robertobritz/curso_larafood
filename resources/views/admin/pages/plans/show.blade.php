@@ -5,7 +5,7 @@
 @section('content_header')
 <h1>Detalhe do Plano <b>{{ $plan->name }}</b> </h1>
 @stop
-
+@include('admin.includes.alert')
 @section('content')
     <div class="card">
         <div class="class card-body">
