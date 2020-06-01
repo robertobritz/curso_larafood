@@ -19,7 +19,7 @@
                 </li>
             </ul>
 
-        <form action="{{ route('permission.destroy', $permission->id)}}" method="POST">
+        <form action="{{ route('permissions.destroy', $permission->id)}}" method="POST">
         @csrf
         @method('DELETE')
         

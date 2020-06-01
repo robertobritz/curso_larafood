@@ -114,7 +114,7 @@ class PermissionController extends Controller
 
         $permission->delete();
 
-        return redirect()->route('permission.index');
+        return redirect()->route('permissions.index');
     }
 
     /**

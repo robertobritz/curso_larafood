@@ -6,6 +6,14 @@ Route::prefix('admin')
         ->namespace('Admin')
         ->group(function(){
 
+    /** 
+     * Permisions x Profile
+     */
+    Route::get('profiles/{id}/permissions/{idPermission}/detach', 'ACL\PemissionsProfileController@detachpermissionsAvaliable')->name('profile.permissions.detach');
+    Route::any('profiles/{id}/permissions/create', 'ACL\PemissionsProfileController@permissionsAvaliable')->name('profile.permissions.avaliable');
+    Route::post('profiles/{id}/permissions/store', 'ACL\PemissionsProfileController@attachPermissionProfile')->name('profile.permissions.attach');
+    Route::get('profiles/{id}/permissions', 'ACL\PemissionsProfileController@permissions')->name('profile.permissions');
+    Route::get('permissions/{id}/profile', 'ACL\PemissionsProfileController@profiles')->name('permissions.profiles');
      /**
      * Routes Permissions
      */
@@ -39,8 +47,9 @@ Route::prefix('admin')
     Route::get('plans', 'PlanController@index')->name('plans.index');
     Route::get('/', 'PlanController@index')->name('admin.index');
 
-    /**
+    
+});
+/**
      * Home Dashboard
      */
-    Route::get('/', 'PlanController@index')->name('admin.index');
-});
+    Route::get('/', 'Admin\PlanController@index')->name('adminHome.index');

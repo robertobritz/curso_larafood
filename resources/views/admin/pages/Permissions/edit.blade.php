@@ -9,7 +9,7 @@
 @section('content')
     <div class="card">
         <div class="class card-body">
-            <form action="{{ route('permission.update', $permission->id) }}" class="form" method="POST">
+            <form action="{{ route('permissions.update', $permission->id) }}" class="form" method="POST">
                 @csrf
                 @method('PUT')
 
