@@ -25,7 +25,8 @@
                 <thead>
                     <tr>
                         <th>Nome</th>
-                        <th width="250">Descrição</th>
+                        <th>Descrição</th>
+                        <th width="290">Ações</th>
                     </tr>   
                 </thead>
                 <tbody>
@@ -35,9 +36,11 @@
                             <td> {{ $profile->description }} </td>
                         <td style="width=10px;">
                            {{-- <a href="{{ route('details.profile.index', $profile->url) }}" class="btn btn-primary">Detalhes</a> --}} 
-                            <a href="{{ route('profile.edit', $profile->id) }}" class="btn btn-info">Edit</a> 
-                            <a href="{{ route('profile.show', $profile->id) }}" class="btn btn-warning">VER</a>
-                            <a href="{{ route('profile.permissions', $profile->id) }}" class="btn btn-warning"><i class="fas fa-lock"></i>VER PERMISSÃO</a> </td>
+                           <a href="{{ route('profile.edit', $profile->id) }}" class="btn btn-info">Edit</a>
+                           <a href="{{ route('profile.show', $profile->id) }}" class="btn btn-warning">VER</a>
+                           <a href="{{ route('profile.permissions', $profile->id) }}" class="btn btn-warning"><i class="fas fa-lock"></i></a>
+                           <a href="{{ route('profile.plans', $profile->id) }}" class="btn btn-info"><i class="fas fa-list-alt"></i></a>
+                         </td>
                         </tr>
                     @endforeach
                 </tbody>

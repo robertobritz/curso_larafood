@@ -19,6 +19,16 @@ class Profile extends Model
     }
 
     /**
+     * Get plans
+     */
+    public function plans()
+    {
+        return $this->belongsToMany(Plan::class);
+    }
+
+
+
+    /**
      * Permission not linked with this profile
      */
     public function permissionsAvailable($filter = null)

@@ -1,5 +1,3 @@
-{{-- resources/views/admin/dashboard.blade.php --}}
-
 @extends('adminlte::page')
 
 @section('title', 'Planos')
@@ -28,7 +26,7 @@
                     <tr>
                         <th>Nome</th>
                         <th>Preço</th>
-                        <th width="250">Ações</th>
+                        <th width="270">Ações</th>
                     </tr>   
                 </thead>
                 <tbody>
@@ -39,7 +37,8 @@
                         <td style="width=10px;">
                             <a href="{{ route('details.plan.index', $plan->url) }}" class="btn btn-primary">Detalhes</a> 
                             <a href="{{ route('plans.edit', $plan->url) }}" class="btn btn-info">Edit</a> 
-                            <a href="{{ route('plans.show', $plan->url) }}" class="btn btn-warning">VER</a> </td>
+                            <a href="{{ route('plans.show', $plan->url) }}" class="btn btn-warning">VER</a> 
+                            <a href="{{ route('plans.profiles', $plan->id) }}" class="btn btn-warning"><i class="fas fa-address-book"></i></a></td>
                         </tr>
                     @endforeach
                 </tbody>
