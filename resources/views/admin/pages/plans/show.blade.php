@@ -11,7 +11,7 @@
         <div class="class card-body">
             <ul>
                 <li>
-                    <strong>Nome: </strong> 
+                    <strong>Nome: </strong> {{ $plan->name}} 
                 </li>
                 <li>
                     <strong>URL: </strong> {{ $plan->url}}
