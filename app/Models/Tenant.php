@@ -8,7 +8,7 @@ class Tenant extends Model
 {
     protected $fillable = [
         'cnpj', 'name', 'url', 'email', 'logo', 'active',
-        'subscription', 'subscription', 'subscription_id', 'subscription_active', 'subscription_suspended', 'expires_at'
+        'subscription', 'subscription_id', 'subscription_active', 'subscription_suspended', 'expires_at'
     ];
 
     public function users()

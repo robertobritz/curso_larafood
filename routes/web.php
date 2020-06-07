@@ -57,14 +57,18 @@ Route::prefix('admin')
     Route::get('plans/create', 'PlanController@create')->name('plans.create');
     Route::get('plans/{url}', 'PlanController@show')->name('plans.show');
     Route::get('plans', 'PlanController@index')->name('plans.index');
+    
+    
     Route::get('/', 'PlanController@index')->name('admin.index');
 
     
 });
-    /**
-     * Home Dashboard
-     */
-    Route::get('/', 'Site\SiteController@index')->name('site.home');
+
+/**
+* Site
+ */
+Route::get('/plan/{url}', 'Site\SiteController@plan')->name('plan.subscription');
+Route::get('/', 'Site\SiteController@index')->name('site.home');
 
 Auth::routes();
 
