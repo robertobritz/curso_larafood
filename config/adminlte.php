@@ -216,12 +216,17 @@ return [
         [
             'text' => 'Perfis',
             'url' => 'admin/profile',
-            'icon' => 'fas fa-users'  
+            'icon' => 'fas fa-address-book'  
         ],
         [
             'text' => 'Permissões',
             'url' => 'admin/permissions',
             'icon' => 'fas fa-lock'  
+        ],
+        [
+            'text' => 'Usuários',
+            'url' => 'admin/users',
+            'icon' => 'fas fa-users'  
         ],
  
     ],
