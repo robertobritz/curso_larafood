@@ -12,6 +12,12 @@ Route::prefix('admin')
     /**
      * Routes Profiles
      */
+    Route::any('categories/search', 'CategoryController@search')->name('categories.search');
+    Route::resource('categories', 'CategoryController');  
+
+    /**
+     * Routes Profiles
+     */
     Route::any('users/search', 'UserController@search')->name('users.search');
     Route::resource('users', 'UserController');   
     
