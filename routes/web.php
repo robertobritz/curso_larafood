@@ -8,6 +8,11 @@ Route::prefix('admin')
         ->middleware('auth')
         ->group(function(){
 
+    /**
+     * Routes Table
+     */
+    Route::any('tables/search', 'TableController@search')->name('tables.search');
+    Route::resource('tables', 'TableController'); 
     
     /**
      * Product x Category
