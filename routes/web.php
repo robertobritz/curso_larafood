@@ -3,10 +3,16 @@
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
+Route::get('teste-acl', function(){
+    dd(auth()->user()->permissions());
+});
+
 Route::prefix('admin')
         ->namespace('Admin')
         ->middleware('auth')
         ->group(function(){
+
+            
 
     /**
      * Routes Table

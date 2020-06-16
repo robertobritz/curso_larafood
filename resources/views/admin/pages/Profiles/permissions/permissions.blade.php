@@ -5,9 +5,11 @@
 @section('content_header')
     <ol class="breadcrumb">
         <li class="breadcrumb-item"><a href="{{ route('admin.index') }}">Dashboard</a></li>
-        <li class="breadcrumb-item active"><a href="{{ route('profile.index') }}" class="active">Pefil</a></li>
+        <li class="breadcrumb-item active"><a href="{{ route('profile.index') }}" class="active">Pefil</a></li><br>
     </ol>
-<h1>Permissões do perfil <b>{{$profile->name}} </b> <a href="{{ route('profile.permissions.avaliable', $profile->id) }}" class="btn btn-dark"><i class="fas fa-plus-square"></i>ADD NOVA PERMISSÃO</a></h1>
+<h1>Permissões do perfil <b>{{$profile->name}} </b><h1>
+    
+<a href="{{ route('profile.permissions.avaliable', $profile->id) }}" class="btn btn-dark"><i class="fas fa-plus-square"></i>ADD NOVA PERMISSÃO</a>
 
 @stop
 
@@ -25,7 +27,7 @@
                 <thead>
                     <tr>
                         <th>Nome</th>
-                        <th width="50">Ações</th>
+                        <th width="150">Ações</th>
                     </tr>   
                 </thead>
                 <tbody>
