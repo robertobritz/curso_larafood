@@ -1,9 +1,9 @@
 @extends('adminlte::page')
 
-@section('title', "Editar o Produto {$tenant->name}")
+@section('title', "Editar a Empres {$tenant->name}")
 
 @section('content_header')
-<h1>Editaro o Produto {{ $tenant->name }} </h1>
+<h1>Editaro a Empres {{ $tenant->name }} </h1>
 @stop
 
 @section('content')
