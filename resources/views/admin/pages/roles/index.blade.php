@@ -26,7 +26,7 @@
                     <tr>
                         <th>Nome</th>
                         <th>Descrição</th>
-                        <th width="290">Ações</th>
+                        <th width="200">Ações</th>
                     </tr>   
                 </thead>
                 <tbody>
@@ -38,7 +38,7 @@
                            {{-- <a href="{{ route('details.roles.index', $role->url) }}" class="btn btn-primary">Detalhes</a> --}} 
                            <a href="{{ route('roles.edit', $role->id) }}" class="btn btn-info">Edit</a>
                            <a href="{{ route('roles.show', $role->id) }}" class="btn btn-warning">VER</a>
-                          {{-- <a href="{{ route('roles.permissions', $role->id) }}" class="btn btn-warning"><i class="fas fa-lock"></i></a> --}} 
+                          <a href="{{ route('roles.permissions', $role->id) }}" class="btn btn-warning"><i class="fas fa-lock"></i></a>  
                          </td>
                         </tr>
                     @endforeach
