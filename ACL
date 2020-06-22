@@ -1,0 +1,35 @@
+User: Roberto Britz
+    Tenant: To no Vale
+        Plan: Businers
+            Profile: Financeiro
+                permission: fin_viwe
+                permission: fin_cad
+                permission: fin_del
+            Profile: Produtos
+                permission: prod_view
+                permission: prod_cad
+                permission: prod_del
+            Profile: Pedidos
+                permission: Pedidos
+
+permission: fin_viwe
+permission: fin_cad
+permission: fin_del
+permission: prod_view
+permission: prod_cad
+permission: prod_del
+permission: Pedidos
+
+________________________
+
+User: Roberto Britz 
+    Roles: Admin
+        permission: fin_viwe
+        permission: fin_cad
+        permission: fin_del
+    Roles: Editor
+        permission: prod_view
+        permission: prod_cad
+        permission: prod_del
+    Roles: Financeiro
+
