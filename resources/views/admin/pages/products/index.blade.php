@@ -1,7 +1,6 @@
 @extends('adminlte::page')
 
-@section('title', 'Pro
-dutos')
+@section('title', 'Produtos')
 
 @section('content_header')
     <ol class="breadcrumb">

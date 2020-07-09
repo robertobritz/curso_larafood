@@ -8,7 +8,7 @@
         @include('adminlte::partials.navbar.left-sidebar-link')
 
         {{-- Configured left links --}}
-        @each('adminlte::partials.menuitems.menu-item-top-nav-left', $adminlte->menu(), 'item')
+        
 
         {{-- Custom left links --}}
         @yield('content_top_nav_left')
